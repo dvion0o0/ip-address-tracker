@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+:root{
+--darkGray:hsl(0, 0%, 17%);
+--darkGray1:hsl(0, 0%, 59%);
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+.section{
+    background:url(./images/pattern-bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 0 10rem 0;
+    position: relative;
+}
+
+.section-center{
+    width: 90vw;
+    margin:  auto;
+    padding: 2rem;
+}
+
+h1{
+    color: #ffffff;
+    margin-bottom:1.5rem;
+}
+
+.form{
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form-input{
+    width: 100%;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+    border: transparent;
+    color:var(--darkGray);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.form-input:focus{
+    outline: transparent;
+    border: transparent;
+}
+
+.form-input::placeholder{
+    font-size: 15px;
+}
+
+.btn{
+    background:black;
+    padding:1.51rem;
+   border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    right:-2.5rem;
+    border: transparent;
+    outline: transparent;
+    top: 0rem;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    font-size: 22px;
+    font-weight: 500;
+    display: none;
+}
+
+.card-center{
+    width:90vw;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    background: #ffffff;
+    padding:2rem;
+    border-radius:15px;
+    z-index: 2;
+}
+
+
+.card-content{
+    margin-bottom: 1rem;
+    color:#ffffff;
+}
+
+.card-content:last-child{
+    margin-bottom: 0;
+}
+
+.card-content h4{
+    color: var(--darkGray1);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.card-content h2{
+    color: var(--darkGray);
+    font-weight: 500;
+}
+
+#mapid {
+height: calc(100vh - 357px);
+z-index: 1;
+}
+
+
+@media screen and (min-width:1170px){
+    h1{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+    .form-input{
+        width: 60%;
+        padding-top: 1.6rem 2rem;
+    }
+
+    .btn{
+        right: 13rem;
+    }
+
+    .card{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        place-items: center;
+    }
+
+    .card-center{
+      top: 80%;
+    }
+
+    #mapid{
+        height: calc(100vh - 397px);
+    }
+
+}
+
+@media screen and (min-width:1900px){
+.btn{
+    right: 21rem;
+}
+}

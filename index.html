@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<section class="section">
+  <div class="section-center">
+    <h1>IP Address Tracker</h1>
+    <form class="form">
+      <input type="text" class="form-input" value = "" placeholder="Search for any IP address or domain">
+      <button class="btn"><img src="./images/icon-arrow.svg"></button>
+    </form>
+    <p class="error">No Ip address found</p>
+  </div>
+  <div class="card-center">
+    <div class="card">
+      <div class="card-content">
+          <h4>IP ADDRESS</h4>
+          <h2 class="ip">192.212.174.101</h2>
+      </div>
+      <div class="card-content">
+          <h4>LOCATION</h4>
+          <h2 class="location">Brooklyn, NY 100001</h2>
+      </div>
+      <div class="card-content">
+          <h4>TIMEZONE</h4>
+          <h2 class="timezone">UTC -05:00</h2>
+      </div>
+      <div class="card-content">
+          <h4>ISP</h4>
+          <h2 class="isp">SpaceX Starlink</h2>
+        </div>
+    </div>
+  </div>
+</section>
+<div id="mapid"></div>
+  <!-- IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC <!-- add offset value dynamically using the API -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="./index.js"></script>
+</body>
+</html>
